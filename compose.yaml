@@ -1,0 +1,17 @@
+services:
+  cloudshare-manager:
+    build:
+      context: .
+    image: cloudshare-manager
+    restart: always
+    container_name: cloudshare-manager
+    hostname: cloudshare-manager
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+
+networks:
+  backend:
+    name: backend
+    driver: bridge
