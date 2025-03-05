@@ -27,4 +27,9 @@ setup(
     url='https://github.com/yourusername/MerakiLoogie',
     scripts=find_scripts(),
     python_requires='>=3.6',
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
 )
